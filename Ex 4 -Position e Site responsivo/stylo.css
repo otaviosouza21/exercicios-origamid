@@ -1,0 +1,81 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+}
+.titulo {
+  text-align: center;
+  margin-top: 65px;
+  font-size: 40px;
+}
+
+.menu-h{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  
+}
+
+.menu-item{
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width:1000px;
+  margin-top: 50px;
+}
+
+.descri{
+  background-color: white;
+}
+
+.info{
+  background-color: white;
+}
+
+.vantagens{
+  font-size: 64px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 80px;
+  color: #c6c6c6;
+  font-weight: bold;
+}
+
+.bike{
+  width: 100%;
+}
+
+.info{
+  display: grid;
+  padding: 50px;
+}
+
+.flex{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+p{
+  font-size: 20px;
+}
+ .p1{
+
+  grid-row-start: 2;
+  grid-column-end: 3;
+  gap:20px;
+ }
+
+.svg{
+  display: flex;
+  position: relative;
+  
+}
