@@ -14,7 +14,7 @@ body{
   display: grid;
   background-color: rgba(2, 2, 2, 0.129);
   padding: 2rem 3rem;
-  gap: 5px;
+  gap: 10px;
   border-radius: 5px;
 
 }
@@ -45,5 +45,16 @@ border: none;
 
 .span-required{
   font-size: 0.7rem;
+  margin-top: -6px;
+  display: none;
 }
 
+input{
+  color: white;
+  outline:none;
+}
+
+.input:focus{
+  border-left: solid 2px green;
+
+}
