@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Verificador de Idade</title>
+</head>
+<body onload="carregar()">
+  <header>
+    <h1>Verificador de Idade</h1>
+  </header>
+  <section class="main">
+    <div class="questionario">
+    <p>
+      Ano de nascimento:
+      <input type="number" name="txtano" id="txtano"></p>
+      <p>
+      Genero: <input type="radio" name="gen" id="mas" checked> 
+             <label for="mas">Homem </label>
+             <input type="radio" name="gen" id="fem"> 
+             <label for="fem">Mulher </label>
+    </p>
+    </div>
+     <div class="resultado">
+      <input type="button" value="Verificar" class="button" onclick="verificar()" >
+      <p class="detectamos"></p>
+      <img id="img" src="https://cdn-icons-png.flaticon.com/512/57/57108.png">
+        
+    </div>
+    <div >
+
+    </div>
+  </section>
+  <footer>
+    <p>OTAVIO copyright ©</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
