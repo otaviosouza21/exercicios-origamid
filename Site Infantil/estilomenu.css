@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+/*Zera a borda e padding para o projeto inteiro , defini o maximo de tamanho e a fonte padrao*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #87ceeb; /*Defini a cor do fundo geral da body*/
+  display: grid;
+}
+
+/*======================Menu de Navegação==================*/
+
+.menu-h {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  text-align: center;
+  background-color: cornflowerblue;
+  box-shadow: 1px 1px 10px 1px;
+  list-style: none;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  height: 60px;
+  width: 110px;
+  align-items: center;
+  justify-content: center;
+}
+
+a:hover {
+  background-color: darkblue;
+  transition: background 0.4s;
+  border-radius: 0px 0px 10px 10px;
+  color: white;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.592);
+}
+
+#entrar {
+  color: white;
+  background-color: darkblue;
+  width: 80px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.592);
+}
+
+#entrar a:hover {
+  background-color: white;
+}
+
+.grid {
+  display: grid;
+  height: 450px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 30px;
+}
+
+.quad {
+  display: grid;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 1px 1px 5px 1px;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.descri {
+  display: flex;
+  background-color: cornflowerblue;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: solid 1px black;
+  grid-column: 1 / 5;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#minimage {
+  display: grid;
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.592);
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+#imagem {
+  display: flex;
+  width: 130px;
+  height: 50px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.checkbox1, .checkbox2, .checkbox3, .checkbox4,
+.checkbox5,.checkbox6,.checkbox7,.checkbox8,.checkbox9,
+.checkbox10, .checkbox11, .checkbox12 {
+  display: grid;
+  font-size: 15px;
+  background-color: springgreen;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.592);
+  font-weight: bold;
+  margin: 3px;
+  cursor: pointer;
+  border: none;
+}
+
+.checkbox1:hover, .checkbox2:hover, .checkbox3:hover, .checkbox4:hover,
+.checkbox5:hover,.checkbox6:hover,.checkbox7:hover,.checkbox8:hover,.checkbox9:hover,
+.checkbox10:hover, .checkbox11:hover, .checkbox12:hover{
+  background-color: springgreen;
+  transition: 0.5s;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.592);
+  box-shadow: 1px 1px 3px 0.1px;
+  
+}
+
+.clicado {
+  background-color: white;
+  box-shadow: 1px 1px 3px 0.1px;
+}
+
+.button {
+  grid-row: 5;
+  grid-column: 2/4;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  background: springgreen;
+  border: none;
+  border-radius: 3px;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 9px 0.5px rgb(109, 198, 233);
+}
+
+.button:hover {
+  background-color: rgb(11, 107, 59);
+  transition: 1s;
+  box-shadow: 1px 1px 10px 1px rgb(11, 107, 59);
+}

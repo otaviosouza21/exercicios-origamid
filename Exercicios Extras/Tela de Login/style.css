@@ -1,0 +1,107 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  background-color: #ded6c9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bk-img{
+  width: 100%;
+}
+
+.imagem{
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 0px 0px 10px;
+  
+  
+}
+
+.main{
+  margin-top: 5rem;
+  display: flex;
+  width: 1000px;
+  border-radius: 10px;
+  justify-items: center;
+
+}
+
+.form{
+  height: 385px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  gap: 20px;
+  background-color: #e68a2ed0;
+}
+
+h1 , p {
+  margin: 0;
+}
+
+input{
+  width: 16rem;
+  height: 2.7rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #e1c78c;
+  border: solid  #e68a2ed0 2px ;
+}
+
+
+
+.title{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: start;
+  margin-bottom: 3rem;
+}
+
+.title::after{
+  position: absolute;
+  content: "";
+  width: 260px;
+  height: 2px;
+  background-color: #c90a0077;
+  top:205px;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.redes{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.title p a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#button{
+  background-color: #c90a00;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
+
+}
+
+#button:hover{
+  transform: scale(0.96);
+  cursor: pointer;
+}
+
+.redes a img{
+  width: 1.9rem;
+}
