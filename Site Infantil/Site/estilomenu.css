@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+/*Zera a borda e padding para o projeto inteiro , defini o maximo de tamanho e a fonte padrao*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Roboto', sans-serif;
+}
+
+body {
+  background-color: #b4f4f8; /*Defini a cor do fundo geral da body*/
+  display: flex;
+  flex-direction: column;
+}
+
+/*======================Menu de Navegação==================*/
+
+.menu-h {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  text-align: center;
+  background-color: cornflowerblue;
+  box-shadow: 1px 1px 10px 1px;
+  list-style: none;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  height: 60px;
+  width: 110px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: darkblue;
+  transition: background 0.4s;
+  border-radius: 0px 0px 10px 10px;
+  color: white;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.592);
+}
+
+#entrar {
+  color: white;
+  background-color: darkblue;
+  width: 80px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.592);
+}
+
+#entrar a:hover {
+  background-color: white;
+}
+
+/* Conteudo principal */
+
+.conteu-principal{
+  display:flex ;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+
+.grid {
+  display: grid;
+  height: 450px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 30px;
+  
+  background:rgba(0, 132, 255, 0.678);
+  
+}
+
+.section-1{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 440px;
+  border-radius: 10px;
+  gap: 10px;
+  box-shadow: 0px 3px 15px 1px;
+}
+.section-2{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 440px;
+  border-radius: 10px;
+  gap: 10px;
+  box-shadow: 0px 3px 15px 1px;
+}
+.section-3{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 440px;
+  border-radius: 10px;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0px 3px 15px 1px;
+}
+
+span{
+  color: #1a1f1e
+}
+.descri {
+  display: flex;
+  background-color: rgba(0, 132, 255, 0.678);
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: solid 1px black;
+  grid-column: 1 / 5;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+#minimage {
+  display: grid;
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  box-shadow: 1px 1px 3px 0.1px;
+}
+
+#imagem {
+  display: flex;
+  width: 130px;
+  height: 50px;
+  align-items: center;
+  margin-top: 5px;
+  
+}
+
+.checkbox1, .checkbox2, .checkbox3, .checkbox4,
+.checkbox5,.checkbox6,.checkbox7,.checkbox8,.checkbox9,
+.checkbox10, .checkbox11, .checkbox12 {
+  display:block;
+  font-size: 16px;
+  background-color: springgreen;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.592);
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  height: 100px;
+}
+
+.checkbox1:hover, .checkbox2:hover, .checkbox3:hover, .checkbox4:hover,
+.checkbox5:hover,.checkbox6:hover,.checkbox7:hover,.checkbox8:hover,.checkbox9:hover,
+.checkbox10:hover, .checkbox11:hover, .checkbox12:hover{
+  background-color: springgreen;
+  transition: 0.5s;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.592);
+  box-shadow: 1px 1px 3px 0.1px;
+  
+}
+
+.clicado {
+  background-color: white;
+  box-shadow: 1px 1px 3px 0.1px;
+}
+
+.button {
+  grid-row: 5;
+  grid-column: 2/4;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  background: springgreen;
+  border: none;
+  border-radius: 3px;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 9px 0.5px rgb(109, 198, 233);
+}
+
+.button:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+
+}
+
+.nomes, .images, .historia{
+display: grid;
+padding: 10px;
+grid-template-columns: repeat(4,1fr);
+gap: 10px;
+}
+
+textarea{
+  background-color: #87cfeb4d;
+  border: rgba(0, 0, 0, 0.308) solid 2px;
+  border-radius: 3px;
+  font-weight: bold;
+  resize: none;
+  width: 400px;
+  height: 300px;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.title{
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 132, 255, 0.678);
+}
+
+.form{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: rgb(7, 114, 214);
+  justify-items: center;
+}
+
+input[type=text]{
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-weight: bold;
+  padding: 2px;
+  background-color:white;
+}
+
+input[type=radio]{
+  color: green;
+}
+
+.quem-somos{
+ display: grid;
+ position: relative;
+ grid-template-columns: repeat(4,1fr);
+ padding: 30px;
+ align-items: center;
+ justify-items: center;
+ left: 25px;
+ width: 250px;
+ gap: 20px;
+
+}
+.img-escola{
+  display: inline;
+  width: 300px;
+  border-radius: 5px 5px 0px 0px;
+}
+.img-escola:hover{
+  filter: brightness(30%);
+  transition: 0.5s;
+
+  
+}
+
+.bloco-img{
+  display: flex;
+  flex-direction: column;  
+  box-shadow: 0px 0px 10px 2px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.bloco-img:hover{
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+.subtitulo{
+  display: inline;
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: rgb(7, 114, 214);
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px -10px 70px 1px;
+}
