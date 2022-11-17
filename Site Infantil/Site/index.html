@@ -13,124 +13,196 @@
 </head>
 
 <body>
-  
 
+  
   <nav>
     <ul class="menu-h">
       <img id="imagem" class="naveg" src="./img/logoensino.png">
-      <li><a class"naveg"="" href="#">INICIO</a></li>
-      <li><a class"naveg"="" href="#">UNIDADES</a></li>
-      <li><a class"naveg"="" href="#">ATIVIDADES</a></li>
-      <li><a class"naveg"="" href="#">SOBRE NOS</a></li>
-      <li><a class"naveg"="" href="#">CONTATO</a></li>
-      <li><a class"naveg"="" id="entrar" href="#">ENTRAR</a>
+      <li><a href="#">INICIO</a></li>
+      <li><a href="#">UNIDADES</a></li>
+      <li><a href="#atv">ATIVIDADES</a></li>
+      <li><a href="#">SOBRE NOS</a></li>
+      <li><a href="#">CONTATO</a></li>
+      <li><a id="entrar" href="#">ENTRAR</a>
       <li>
     </ul>
   </nav>
 
-<main class="conteu-principal">
+  <div class="objetivo">NOSSO OBJETIVO</div>
 
   <div class="quem-somos">
 
     <div class="bloco-img">
-    <img class="img-escola" src="./img/crianca-comp.jpg" alt="">
-    <p class="subtitulo">Focada na aprendizagem e na educação com tecnologia</p>
+
+      <img class="img-escola" src="./img/crianca-comp.jpg" alt="">
+
+      <p class="subtitulo">Focada na aprendizagem e na educação com tecnologia</p>
     </div>
 
     <div class="bloco-img">
-    <img class="img-escola" src="./img/instituicao.jpg" alt="">
-    <p class="subtitulo" >Eventos sociais que atraem que envolvem a comunidade</p>
+      <img class="img-escola" src="./img/instituicao.jpg" alt="">
+      <p class="subtitulo">Eventos sociais que atraem que envolvem a comunidade</p>
     </div>
 
     <div class="bloco-img">
-    <img class="img-escola" src="./img/licao.jpg" alt="">
-    <p class="subtitulo">Lições e exercicios para treinar a mente e o desenvolviemnto</p>
+      <img class="img-escola" src="./img/licao.jpg" alt="">
+      <p class="subtitulo">Lições e exercicios para treinar a mente e o desenvolviemnto</p>
     </div>
 
     <div class="bloco-img">
-    <img class="img-escola" src="./img/sala_de_aula.jpg" alt="">
-    <p class="subtitulo">Material de apoio e estudo para auxilio na aprendizagem</p>
+      <img class="img-escola" src="./img/sala_de_aula.jpg" alt="">
+      <p class="subtitulo">Material de apoio e estudo para auxilio na aprendizagem</p>
     </div>
 
   </div>
 
-  <form class="form" method="post" action="form.php">
-    <span>Nome <input type="text" name="nome" id="" placeholder="Nome Completo"></span>
-    <span>Registro <input type="text" name="rgm" placeholder="RGM"></span>
-    <span>Turma :</span>
-    <span><input type="radio" name="turma">2ºAno A</span>
-    <span><input type="radio" name="turma">2ºAno B</span>
-    <span><input type="radio" name="turma">2ºAno C</span>
-    <input type="submit">
-  </form>
-  <h1 class="title">Relembre as suas ferias e complete as atividades abaixo</h1>
+  <main class="conteu-principal">
 
+
+
+
+
+    <form class="form" method="post" action="form.php">
+      <span>Nome <input type="text" name="nome" id="" placeholder="Nome Completo"></span>
+      <span>Registro <input type="text" name="rgm" placeholder="RGM"></span>
+      <span>Turma :</span>
+      <span><input type="radio" name="turma" value="2ºAno A">2ºAno A</span>
+      <span><input type="radio" name="turma" value="2ºAno B">2ºAno B</span>
+      <span><input type="radio" name="turma" value="2ºAno C">2ºAno C</span>
+      <input class="sub-bot" type="submit">
+    </form>
+
+    <div class="title">
+      <h4 id="atv">ATIVIDADE</h4>
+      <h3>Relembre as suas ferias e complete as atividades abaixo</h3>
+    </div>
+
+
+
+    <section class="grid">
+
+      <div class="section-1" id="quad1">
+        <section class="descri">
+          <span>Leia, repita e marque os objetos que fizeram parte das suas férias</span>
+        </section>
+
+        <section class="nomes">
+          <button class="checkbox1 clicado"><span>Bola</span></button>
+          <button class="clicado checkbox2"><span>Boneca</span></button>
+          <button class="clicado checkbox3"><span>Bicicleta</span></button>
+          <button class="clicado checkbox4"><span>Videogame</span></button>
+          <button class="clicado checkbox5"><span>Televisão</span></button>
+          <button class="clicado checkbox6"><span>Computador</span></button>
+          <button class="clicado checkbox7"><span>Skate</span></button>
+          <button class="clicado checkbox8"><span>Caderno</span></button>
+          <button class="clicado checkbox9"><span>Celular</span></button>
+          <button class="clicado checkbox10"><span>Pião</span></button>
+          <button class="clicado checkbox11"><span>Pipa</span></button>
+          <button class="clicado checkbox12"><span>Patinete</span></button>
+        </section>
+      </div>
+
+      <div class="section-2" id="quad2">
+
+        <section class="descri">
+          <span>Marque as imagens que correspondem aos objetos </span>
+        </section>
+
+        <section class="images">
+
+          <img class="bicicleta minimage ativo" src="./img/bicicleta.png" alt="bicicleta" onclick="addImg1('bicicleta')">
+
+          <img class="televisao minimage ativo" src="./img/televisao.png" alt="televisão" onclick="addImg2('televisão')">
+
+          <img class="caderno minimage ativo" src="./img/caderno.png" alt="caderno" onclick="addImg3('caderno')">
+
+          <img class="piao minimage ativo" src="./img/piao.png" alt="piao" onclick="addImg4('piao')">
+
+          <img class="skate minimage ativo" src="./img/skate.png" alt="skate" onclick="addImg5('skate')">
+
+          <img class="celular minimage ativo" src="./img/celular.png" alt="celular" onclick="addImg6('celular')">
+
+          <img class="computador minimage ativo" src="./img/computador.png" alt="computador" onclick="addImg7('computador')">
+
+          <img class="patinete minimage ativo" src="./img/patinete.png" alt="patinete" onclick="addImg8('patinete')">
+
+          <img class="videogame minimage ativo" src="./img/videogame.png" alt="videogame" onclick="addImg9('videogame')">
+
+          <img class="boneca minimage ativo" src="./img/boneca.png" alt="boneca" onclick="addImg10('boneca')">
+
+          <img class="pipa minimage ativo" src="./img/pipa.png" alt="pipa" onclick="addImg11('pipa')">
+
+          <img class="bola minimage ativo" onclick="addImg12('bola')" src="./img/bola.png" alt="bola">
+        </section>
+      </div>
+
+
+
+      <div class="section-3" class="historia">
+        <div class="popup popup-active">
+          <span class="xis" onclick="closePop()">X</span>
+          <h3>Parabens, você completou a atividade corretamente!</h3>
+        </div>
+        <div class="popup-vazio vazio-active">
+          <span class="xis1" onclick="closePop1()">X</span>
+          <h3>Ops! Os campos da atividade estão vazios :(</h3>
+        </div>
+        <div class="popup-erro erro-active">
+          <span class="xis2" onclick="closePop2()">X</span>
+          <h3>Ops! Alguma imagem está diferente da palavra, tente novamente!</h3>
+        </div>
+        <section class="descri">
+          <span>Escreva uma pequena historia com algum destes objetos</span>
+        </section>
+
+        <section>
+          <input type="text" placeholder="Conte sua Historia..." id="textbox" name="historia">
+          <section>
+
+      </div>
+      <div class="section-4" class="historia">
+
+        <section>
+
+          <input class="envia-atv" type="submit" method="post" action="form.php" value="Enviar Atividade" onclick="verifica()">
+          <section>
+            
+      </div>
+
+    </section>
+  </main>
   
+  <footer class="footer">
+    <img class="logo-footer" src="./img/logoensino.png" alt="logo ensino">
+    <section class="menu-footer">
+      <ul>
+        <li><strong>INICIO</strong></li>
+        <li>ATIVIDADES</li>
+        <li>EDUCAÇÃO</li>
+        <li>LOGIN</li>
+      </ul>
 
-  <section class="grid">
-    <div class="section-1" id="quad1">
-      <section class="descri">
-      <span>Leia, repita e marque os objetos que fizeram parte das suas férias</span>
-      </section>
+      <ul>
+        <li><strong>SOBRE NÓS</strong></li>
+        <li>CONTATO</li>
+        <li>INSTITUIÇÃO</li>
+        <li>UNIDADES</li>
+      </ul>
 
-      <section class="nomes">
-      <button class="clicado checkbox1">Bola</button>
-      <button class="clicado checkbox2">Boneca</button>
-      <button class="clicado checkbox3">Bicicleta</button>
-      <button class="clicado checkbox4">Videogame</button>
-      <button class="clicado checkbox5">Televisão</button>
-      <button class="clicado checkbox6">Computador</button>
-      <button class="clicado checkbox7">Skate</button>
-      <button class="clicado checkbox8">Caderno</button>
-      <button class="clicado checkbox9">Celular</button>
-      <button class="clicado checkbox10">Pião</button>
-      <button class="clicado checkbox11">Pipa</button>
-      <button class="clicado checkbox12">Patinete</button>
-      </section>
-    </div>
+      <ul>
+        <li><strong>SUPORTE</strong></li>
+        <li>TELEFONE</li>
+        <li>CHAT</li>
+      </ul>
+    </section>
+    <section class="redes-sociais">
+      <img class="redes" src="./img/facebook.png" alt="logoface">
+      <img class="redes" src="./img/twitter.png" alt="logoface">
+      <img class="redes" src="./img/instagram.png" alt="logoface">
+    </section>
+    <script src="./codigo.js">
 
-    <div class="section-2" id="quad2">
-      
-      <section class="descri">
-      <span>Marque as imagens abaixo conforme as imagens que você escolheu</span>
-      </section>
-
-      <section class="images">
-      <img id="minimage" src="./img/bicicleta.png" alt="bicicleta">
-      <img id="minimage" src="./img/televisao.png" alt="televisão">
-      <img id="minimage" src="./img/caderno.png" alt="caderno">
-      <img id="minimage" src="./img/piao.png" alt="piao">
-      <img id="minimage" src="./img/skate.png" alt="skate">
-      <img id="minimage" src="./img/celular.png" alt="celular">
-      <img id="minimage" src="./img/computador.png" alt="computador">
-      <img id="minimage" src="./img/patinete.png" alt="patinete">
-      <img id="minimage" src="./img/videogame.png" alt="videogame">
-      <img id="minimage" src="./img/boneca.png" alt="boneca">
-      <img id="minimage" src="./img/pipa.png" alt="pipa">
-      <img id="minimage" src="./img/bola.png" alt="pipa">
-       </section>
-    </div>
-
-
-
-    <div class="section-3" class="historia">
-
-      <section class="descri">
-      <span>Escreva uma pequena historia com algum destes objetos</span>
-     </section>
-
-      <section>
-      <textarea placeholder="Conte sua Historia..." id="textbox" rows="15" cols="70"></textarea>
-      <section>
-    </div>
-
-  </section>
- </main>
-  <footer></footer>
-
-  <script src="./codigo.js">
-
-  </script>
+    </script>
 
 
 </body>

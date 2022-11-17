@@ -32,7 +32,10 @@ int main (){
 	float imc;
 	int opc_3;
 	int opc_4;
-	
+	float soma_imc;
+	float media_imc;
+	float soma_rcq;
+	float media_rcq;
 do{
 
 	system("cls");
@@ -173,6 +176,16 @@ else if(opc==2){
 		cout<<"================================\n";
 	}
 	
+	    cout<<"===========Estatísticas=========\n";
+	    for(i=0;i<quant;i++){
+	    soma_imc = soma_imc+calcimc(pessoa[i].peso,pessoa[i].altura);
+	    soma_rcq = soma_rcq+calcrcq(pessoa[i].quadril,pessoa[i].cintura);
+	    }
+	    media_imc = soma_imc/quant;
+	    media_rcq = soma_rcq/quant;
+	    cout<<"A media de IMC entre as pessoas é de: "<<media_imc;
+	    cout<<"A media de IMC entre as pessoas é de: "<<media_rcq;
+	    
 	break;
 	
 }
@@ -183,6 +196,5 @@ else if(opc==2){
 while(opc!=5);
 
 }
-
 
 

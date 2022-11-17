@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-content: center;
+
+}
+
+.resposta {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(0, 132, 255, 0.678);
+  border-radius: 5px;
+  width: 500px;
+}
+
+a {
+  display:inline;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+a:hover {
+  color: darkblue;
+}
+
+
