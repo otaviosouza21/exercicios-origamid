@@ -1,0 +1,25 @@
+ALUNO:  
+REGISTRO: 7897
+TURMA: 2ºAno A
+HISTORIA 'MINHAS FERIAS': asdsa
+=========================
+ALUNO:  
+REGISTRO:  
+TURMA: 2ºAno A
+HISTORIA 'MINHAS FERIAS': dsfsd
+=========================
+ALUNO:  
+REGISTRO:  
+TURMA:  
+HISTORIA 'MINHAS FERIAS':  
+=========================
+ALUNO:  
+REGISTRO:  
+TURMA:  
+HISTORIA 'MINHAS FERIAS':  
+=========================
+ALUNO:  
+REGISTRO:  
+TURMA:  
+HISTORIA 'MINHAS FERIAS':  
+=========================

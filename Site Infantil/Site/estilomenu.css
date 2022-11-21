@@ -48,13 +48,63 @@ a:hover {
 #entrar {
   color: white;
   background-color: darkblue;
-  width: 80px;
+  width: 180px;
+  font-size: 1.2rem;
   border-radius: 0px 0px 10px 10px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.592);
+  
 }
 
-#entrar a:hover {
-  background-color: white;
+#entrar:hover {
+  background-color: rgb(24, 14, 177);
+}
+
+.entrar-login{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.login-div{
+  position: absolute;
+  list-style: none;
+  display: none;
+  z-index: 6;
+
+}
+
+.login{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  background: cornflowerblue;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px 1px;
+
+}
+
+ul li{
+  list-style: none;
+}
+
+#esqueci{
+  display: inline;
+  width: 100%;
+  height: 100%;
+  background: none;
+  box-shadow: none;
+}
+
+#usuario,.login input{
+width: 200px;
+border: none;
+height: 20px;
+border-radius: 5px;
+font-weight: bold;
+
 }
 
 /* Conteudo principal */
@@ -131,6 +181,8 @@ a:hover {
   margin: 0 auto;
   background-color: rgb(1, 28, 68);
 }
+
+
 
 span {
   color: #1a1f1e;
@@ -308,13 +360,14 @@ input[type="radio"] {
   border-radius: 5px 5px 0px 0px;
 }
 .img-escola:hover {
-  filter: brightness(30%);
   transition: 0.5s;
 }
 
 .bloco-img {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: start;
   box-shadow: 0px 0px 10px 2px;
   border-radius: 5px 5px 5px 5px;
 }
@@ -322,6 +375,17 @@ input[type="radio"] {
 .bloco-img:hover {
   transform: scale(1.02);
   transition: 0.5s;
+  background-color: white;
+}
+
+.saiba-mais{
+  position: absolute;
+  height: 150px;
+  margin-top: 40px;
+  display: none;
+  cursor: pointer;
+
+
 }
 
 .subtitulo {
