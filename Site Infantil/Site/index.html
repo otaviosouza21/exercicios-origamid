@@ -16,8 +16,18 @@
 
 <body>
 
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 
-  <nav>
+  <nav aria-label="primaria">
     <ul class="menu-h">
       <img id="imagem" class="naveg" src="./img/logoensino.png">
       <li><a href="#">INICIO</a></li>
@@ -41,37 +51,46 @@
     </ul>
   </nav>
 
-  <div class="objetivo">NOSSO OBJETIVO</div>
+  <h2 class="objetivo">NOSSO OBJETIVO</h2>
 
-  <div class="quem-somos">
 
-    <div class="bloco-img img-1">
+  <article aria-label="Quem somos" class="quem-somos">
 
+    <section aria-label="Objetivo 1" class="bloco-img img-1">
+     
       <img class="img-escola" src="./img/crianca-comp.jpg" alt="">
-
+      <img src="./img/mais.svg" class="saiba-mais-1" alt="">
+  
       <p class="subtitulo">Focada na aprendizagem e na educação com tecnologia</p>
-    </div>
+    </section>
 
-    <div class="bloco-img img-2">
+    <section aria-label="Objetivo 2" class="bloco-img">
+    
       <img class="img-escola" src="./img/instituicao.jpg" alt="">
+      <img src="./img/mais.svg" class="saiba-mais-2" alt="">
+
       <p class="subtitulo">Eventos sociais que atraem que envolvem a comunidade</p>
-    </div>
+    </section>
 
-    <div class="bloco-img">
- 
-      <img class="img-escola img-3" src="./img/licao.jpg" alt="">
-      <img src="./img/mais.svg" class="saiba-mais" alt="">
+    <section aria-label="Objetivo 3" class="bloco-img">
+  
+      <img class="img-escola " src="./img/licao.jpg" alt="">
+      <img src="./img/mais.svg" class="saiba-mais-3" alt="">
+
       <p class="subtitulo">Lições e exercicios para treinar a mente e o desenvolviemnto</p>
-    </div>
+    </section>
 
-    <div class="bloco-img img-4">
+   <section aria-label="Objetivo 4" class="bloco-img img-4">
+
       <img class="img-escola" src="./img/sala_de_aula.jpg" alt="">
+      <img src="./img/mais.svg" class="saiba-mais-4" alt="">
+
       <p class="subtitulo">Material de apoio e estudo para auxilio na aprendizagem</p>
-    </div>
+    </section>
 
-  </div>
+  </article>
 
-  <main class="conteu-principal">
+  <main aria-label="Atividade Minhas Ferias" class="conteu-principal">
 
 
     <form id="my-form" class="form" action="./php/form.php" method="post">
@@ -83,7 +102,7 @@
       <span><input class="campo-radio" type="radio" name="turma" value="2ºAno C">2ºAno C</span>
     </form>
 
-    <div class="title">
+    <div aria-label="Zona de atividades" class="title">
       <h4 id="atv">ATIVIDADE</h4>
       <h3>Relembre as suas ferias e complete as atividades abaixo</h3>
     </div>
@@ -92,12 +111,12 @@
 
     <section class="grid">
 
-      <div class="section-1" id="quad1">
+      <article  class="section-1" id="quad1">
         <section class="descri">
           <span>Leia, repita e marque os objetos que fizeram parte das suas férias</span>
         </section>
 
-        <section class="nomes">
+        <section aria-label="Zona de nomes de objetos" class="nomes">
           <button class="checkbox1 clicado"><span>Bola</span></button>
           <button class="clicado checkbox2"><span>Boneca</span></button>
           <button class="clicado checkbox3"><span>Bicicleta</span></button>
@@ -111,7 +130,7 @@
           <button class="clicado checkbox11"><span>Pipa</span></button>
           <button class="clicado checkbox12"><span>Patinete</span></button>
         </section>
-      </div>
+      </article>
 
       <div class="section-2" id="quad2">
 
@@ -119,7 +138,7 @@
           <span>Marque as imagens que correspondem aos objetos </span>
         </section>
 
-        <section class="images">
+        <section aria-label="Zona de figuras de objetos" class="images">
 
           <img class="bicicleta minimage ativo" src="./img/bicicleta.png" alt="bicicleta" onclick="addImg1('bicicleta')">
 
@@ -167,7 +186,7 @@
         </section>
 
         <section>
-          <textarea class="campo-text" form="my-form" type="text" name="historia" id="historia" cols="200" rows="7" style="resize: none;"></textarea>
+          <textarea class="campo-text" form="my-form" type="text" name="historia" id="historia"  style="resize: none;"></textarea>
           <section>
 
       </div>
@@ -185,27 +204,27 @@
 
   <footer class="footer">
     <img class="logo-footer" src="./img/logoensino.png" alt="logo ensino">
-    <section class="menu-footer">
+    <nav class="menu-footer" aria-label="secundaria">
       <ul>
         <li><strong>INICIO</strong></li>
-        <li>ATIVIDADES</li>
-        <li>EDUCAÇÃO</li>
-        <li>LOGIN</li>
+        <li><a href="#">ATIVIDADES</a></li>
+        <li><a href="#">EDUCAÇÃO</a></li>
+        <li><a href="#">LOGIN</a></li>
       </ul>
 
       <ul>
         <li><strong>SOBRE NÓS</strong></li>
-        <li>CONTATO</li>
-        <li>INSTITUIÇÃO</li>
-        <li>UNIDADES</li>
+        <li><a href="#">CONTATO</a></li>
+        <li><a href="#">INSTITUIÇÃO</a></li>
+        <li><a href="#">UNIDADES</a></li>
       </ul>
 
       <ul>
         <li><strong>SUPORTE</strong></li>
-        <li>TELEFONE</li>
-        <li>CHAT</li>
+        <li><a href="#">TELEFONE</a></li>
+        <li><a href="#">CHAT</a></li>
       </ul>
-    </section>
+    </nav>
     <section class="redes-sociais">
       <img class="redes" src="./img/facebook.png" alt="logoface">
       <img class="redes" src="./img/twitter.png" alt="logoface">

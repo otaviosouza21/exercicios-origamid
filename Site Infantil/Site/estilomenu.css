@@ -26,7 +26,7 @@ body {
   list-style: none;
 }
 
-a {
+.menu-h li a {
   display: flex;
   text-decoration: none;
   color: white;
@@ -37,7 +37,7 @@ a {
   font-weight: bold;
 }
 
-a:hover {
+.menu-h li a:hover {
   background-color: darkblue;
   transition: background 0.4s;
   border-radius: 0px 0px 10px 10px;
@@ -361,6 +361,9 @@ input[type="radio"] {
 }
 .img-escola:hover {
   transition: 0.5s;
+  filter: brightness(50%);
+  
+ 
 }
 
 .bloco-img {
@@ -376,16 +379,26 @@ input[type="radio"] {
   transform: scale(1.02);
   transition: 0.5s;
   background-color: white;
+ 
+  
+  
 }
 
-.saiba-mais{
+.saiba-mais-1, .saiba-mais-2, .saiba-mais-3, .saiba-mais-4{
   position: absolute;
   height: 150px;
   margin-top: 40px;
-  display: none;
   cursor: pointer;
+  display: none;
 
 
+}
+
+.img-3{
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  
 }
 
 .subtitulo {
@@ -542,6 +555,14 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+}
+.campo-text{
+  width: 90%;
+ height: 100px;
+ padding: 5px;
+ 
+
 }
 
 
@@ -564,6 +585,12 @@ input[type="radio"] {
 .sub-bot:active{
   transform: scale(0.9);
 }
+
+.menu-footer ul li a{
+text-decoration: none;
+color: white;
+}
+
 
 @keyframes some {
   0% {

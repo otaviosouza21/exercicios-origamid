@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./jquery.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <main class="calculadora">
+    <div class="top-calc">
+      <span>Calculadora</span>
+      <span>_</span>
+      <span>&#9744</span>
+      <span>X</span>
+    </div>
+
+
+    <div class="menu-calc">
+      <span><img class="img" src="./menu-icon.svg" alt=""></span>
+      <span>Padrão</span>
+    </div>
+
+    <div class="display">
+      <p class="tela">0</p>
+    </div>
+
+
+    <div class="teclado">
+      <span class="tecla" onclick="add('%')">%</span>
+      <span class="tecla">CE</span>
+      <span class="tecla" onclick="allDel()">C</span>
+      <span class="tecla" onclick="onlyDell()">Del</span>
+      <span class="tecla">¹/x</span>
+      <span class="tecla">x²</span>
+      <span class="tecla">²v2</span>
+      <span class="tecla" onclick="add('/')">/</span>
+      <span class="tecla number" onclick="add(7)">7</span>
+      <span class="tecla number" onclick="add(8)">8</span>
+      <span class="tecla number" onclick="add(9)">9</span>
+      <span class="tecla" onclick="add('*')">X</span>
+      <span class="tecla number" onclick="add(4)">4</span>
+      <span class="tecla number" onclick="add(5)">5</span>
+      <span class="tecla number" onclick="add(6)">6</span>
+      <span class="tecla" onclick="add('-')">-</span>
+      <span class="tecla number" onclick="add(1)">1</span>
+      <span class="tecla number" onclick="add(2)">2</span>
+      <span class="tecla number" onclick="add(3)">3</span>
+      <span class="tecla" onclick="add('+')">+</span>
+      <span class="tecla number">+/-</span>
+      <span class="tecla number" onclick="add(0)">0</span>
+      <span class="tecla number">,</span>
+      <span class="tecla" onclick="calculo()">=</span>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+
+
+</body>
+</html>

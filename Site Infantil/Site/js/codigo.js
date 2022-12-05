@@ -338,15 +338,10 @@ $("#entrar").click(function () {
   $(".login-div").animate({ top: "66px" },"fast").slideToggle(200);
 });
 
-$(".img-escola ,.saiba-mais").hover(function(){
-  $(".img-3").css("filter","brightness(50%)")
-  $(".saiba-mais").show(10);
 
+$(".img-3").mouseleave(function(){
+  $(".saiba-mais").hide(10);
 })
 
-$(".img-escola, .saiba-mais").mouseout(function(){
-  $(this).css("filter","brightness(100%)");
-  $(".saiba-mais").hide();
-})
 
 
