@@ -1,4 +1,0 @@
-ALUNO: hugo
-REGISTRO: 7878
-TURMA: 2ºAno B
-=========================

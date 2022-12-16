@@ -1,4 +1,0 @@
-ALUNO: Otavio
-REGISTRO: 45678
-TURMA: 2ºAno A
-=========================

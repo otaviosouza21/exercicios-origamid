@@ -1,5 +1,0 @@
-ALUNO: Alexandre
-REGISTRO: 87987
-TURMA: 2ºAno C
-HISTORIA 'MINHAS FERIAS': Eu corri
-=========================
