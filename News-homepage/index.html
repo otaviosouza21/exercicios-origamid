@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./estilo/style.css">
+  <script type="text/javascript" src="./script/jquery.js"></script>
 
   <title>News homepage</title>
 </head>
 
 <body>
-
+  <div class="blackout">
+  </div>
 <div class="pagina-home">
+  
+
+  <ul class="navegaçao-mobile">
+    <img class="xis" src="./assets/images/icon-menu-close.svg" alt="">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">New</a>
+    <li><a href="#">Popular</a>
+    <li><a href="#">Trending</a>
+    <li><a href="#">Categories</a>
+  </ul>
 
   <nav class="menu-top">
-    <img class="logo" src="/assets/images/logo.svg">
+    <a href="#"><img class="logo" src="./assets/images/logo.svg"></a>
+    <img class="icon-menu-burguer" src="./assets/images/icon-menu.svg" alt="">
     <ul class="navegaçao">
       <li><a href="#">Home</a></li>
       <li><a href="#">New</a>
@@ -25,7 +40,10 @@
     </ul>
   </nav>
 
-  <main class="conteudo">
+
+
+  <main class="conteudo escuro">
+    <img  class="image-web-mobile" src="/assets/images/image-web-3-mobile.jpg" alt="">
     <img class="image-web" src="./assets/images/image-web-3-desktop.jpg">
 
     <section class="new">
@@ -96,6 +114,10 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Otavio Souza</a>.
   </div>
+
+</div>
 </body>
+
+<script src="./script/script.js"></script>
 
 </html>
